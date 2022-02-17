@@ -1,0 +1,48 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.pokemon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta {
+    background-color: v.$blanco;
+    width: 326px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+
+    &-fondo {
+        width: 100%;
+        display: block;
+    }
+
+    &-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-imagen {
+            border: 10px solid v.$azul;
+            width: 40%;
+            border-radius: 50%;
+            margin-top: -70px;
+            background-color: v.$blanco;
+        }
+    }
+
+    &-titulo {
+        font-size: 2.5rem;
+    }
+
+    &-tipo-pokemon {
+        background-color: v.$azul;
+        border-radius: 25px;
+        padding: 0 1.5rem;
+        color: v.$blanco;
+        margin-top: -10px;
+    }
+}
+

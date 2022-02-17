@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="build/css/app.css">
-
 </head>
 <body>
     <div class="titulo">
@@ -16,7 +16,7 @@
         </div>
     </div>
 
-    <div class="video">
+    <header class="video">
         <div class="overlay">
             <div class="contenedor contenido-video">
                 <h2>Las maravillas Pokémon</h2>
@@ -26,11 +26,28 @@
         <video autoplay muted loop>
             <source src="video/pokemon.mp4" type="video/mp4">
         </video>
-    </div>
+    </header>
 
-    <div class="pokemon-container">
-
-    </div>
+    <main class="pokemon-container contenedor">
+        <article class="tarjeta">
+            <img src="/img/fondo-fuego.jpg" alt="fondo-tarjeta" class="tarjeta-fondo">
+            <header class="tarjeta-header">
+                <img src="/img/charmander.png" alt="pokemon" class="tarjeta-header-imagen">
+                <h1 class="tarjeta-titulo">Charmander # <span>001</span></h1>
+                <p class="tarjeta-tipo-pokemon">Fuego</p>
+            </header>
+            <footer class="tarjeta-footer">
+                <div class="tarjeta-footer-habilidad">
+                    <h3>Pumba</h3>
+                    <p>Habilidad</p>
+                </div>
+                <div class="tarjeta-footer-habilidad">
+                    <h3>800</h3>
+                    <p>N Experiencia</p>
+                </div>
+            </footer>
+        </article>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="build/js/bundle.min.js" defer></script>
