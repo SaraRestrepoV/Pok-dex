@@ -1,10 +1,9 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
+
 .pokemon-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include m.grid(3, 2rem)
 }
 
 .tarjeta {
@@ -13,6 +12,7 @@
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+    margin: 1rem 0;
 
     &-fondo {
         width: 100%;
@@ -43,6 +43,29 @@
         padding: 0 1.5rem;
         color: v.$blanco;
         margin-top: -10px;
+    }
+
+    &-footer {
+        display: flex;
+        justify-content: space-around;
+        
+        &-habilidad,
+        &-experiencia {
+            text-align: center;
+            margin-top: -20px;
+
+            h3 {
+                font-size: 1.5rem;
+                margin-bottom: 0px;
+                font-weight: v.$bold;
+            }
+    
+            p {
+                font-size: 1.5rem;
+                margin-top: -3px;
+            }
+        }
+
     }
 }
 
